@@ -1,0 +1,44 @@
+
+
+
+
+
+.app-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container,
+.result-container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .content-container {
+    flex-direction: row;
+  }
+
+  .form-container,
+  .result-container {
+    flex: 1;
+  }
+
+  .form-container {
+    margin-right: 20px;
+  }
+}
